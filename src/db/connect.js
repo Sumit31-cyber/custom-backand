@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
-DB = 'mongodb://localhost:27017/olympics',
+const DB = 'mongodb+srv://sumit:sumit@cluster0.9ftji.mongodb.net/olympics?retryWrites=true&w=majority'
 mongoose.connect(DB, {
-
     useNewUrlParser:true,
-    useUnifiedTopology:true
+    useUnifiedTopology:true,
 }).then(()=>{
     console.log("DB Connected...")
 }).catch((e)=>{
